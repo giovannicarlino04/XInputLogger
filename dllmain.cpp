@@ -278,25 +278,8 @@ void HookDebugFunctions() {
         // Get original function addresses
         OriginalOutputDebugStringA = (OutputDebugStringAFunc)GetProcAddress(kernel32, "OutputDebugStringA");
         OriginalOutputDebugStringW = (OutputDebugStringWFunc)GetProcAddress(kernel32, "OutputDebugStringW");
-        
-        // Hook functions by patching IAT
-        if (OriginalOutputDebugStringA) {
-            DWORD oldProtect;
-            FARPROC* pIAT = (FARPROC*)GetProcAddress(kernel32, "OutputDebugStringA");
-            VirtualProtect(pIAT, sizeof(FARPROC), PAGE_READWRITE, &oldProtect);
-            *pIAT = (FARPROC)HookedOutputDebugStringA;
-            VirtualProtect(pIAT, sizeof(FARPROC), oldProtect, &oldProtect);
-            WriteLog("Hooked OutputDebugStringA\n");
-        }
-        
-        if (OriginalOutputDebugStringW) {
-            DWORD oldProtect;
-            FARPROC* pIAT = (FARPROC*)GetProcAddress(kernel32, "OutputDebugStringW");
-            VirtualProtect(pIAT, sizeof(FARPROC), PAGE_READWRITE, &oldProtect);
-            *pIAT = (FARPROC)HookedOutputDebugStringW;
-            VirtualProtect(pIAT, sizeof(FARPROC), oldProtect, &oldProtect);
-            WriteLog("Hooked OutputDebugStringW\n");
-        }
+
+        WriteLog("Stored original debug function addresses\n");
     }
 }
 
