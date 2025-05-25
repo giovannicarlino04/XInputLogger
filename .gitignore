@@ -1,0 +1,23 @@
+# Compiled output
+*.dll
+*.exe
+*.o
+*.obj
+*.lib
+*.exp
+
+# Build directories
+build/
+bin/
+
+# IDE files
+.vs/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db

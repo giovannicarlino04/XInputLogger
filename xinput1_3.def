@@ -1,0 +1,65 @@
+EXPORTS
+    OriginalOutputDebugStringA @1 DATA
+    OriginalOutputDebugStringW @2 DATA
+    OriginalXInputGetBatteryInformation @3 DATA
+    OriginalXInputGetCapabilities @4 DATA
+    OriginalXInputGetKeystroke @5 DATA
+    OriginalXInputGetState @6 DATA
+    OriginalXInputSetState @7 DATA
+    XInputGetBatteryInformation@12 @8
+    XInputGetCapabilities@12 @9
+    XInputGetKeystroke@12 @10
+    XInputGetState@8 @11
+    XInputSetState@8 @12
+    _Unwind_Backtrace @13
+    _Unwind_DeleteException @14
+    _Unwind_FindEnclosingFunction @15
+    _Unwind_Find_FDE @16
+    _Unwind_ForcedUnwind @17
+    _Unwind_GetCFA @18
+    _Unwind_GetDataRelBase @19
+    _Unwind_GetGR @20
+    _Unwind_GetIP @21
+    _Unwind_GetIPInfo @22
+    _Unwind_GetLanguageSpecificData @23
+    _Unwind_GetRegionStart @24
+    _Unwind_GetTextRelBase @25
+    _Unwind_RaiseException @26
+    _Unwind_Resume @27
+    _Unwind_Resume_or_Rethrow @28
+    _Unwind_SetGR @29
+    _Unwind_SetIP @30
+    _Z10CleanupDLLv @31
+    _Z10LoadConfigv @32
+    _Z12CheckHotkeysv @33
+    _Z12GetTimestampB5cxx11v @34
+    _Z13InitializeDLLv @35
+    _Z13ToggleLoggingv @36
+    _Z13messageBufferB5cxx11 @37 DATA
+    _Z14GetProcessInfov @38
+    _Z15ShowProcessInfov @39
+    _Z18HookDebugFunctionsv @40
+    _Z24HookedOutputDebugStringAPKc@4 @41
+    _Z24HookedOutputDebugStringWPKw@4 @42
+    _Z8WriteLogPKcz @43
+    _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJRKS5_EEEvDpOT_ @44
+    _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_ @45
+    _ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE8_M_eraseEN9__gnu_cxx17__normal_iteratorIPS5_S7_EE @46
+    __deregister_frame @47
+    __deregister_frame_info @48
+    __deregister_frame_info_bases @49
+    __emutls_get_address @50
+    __emutls_register_common @51
+    __frame_state_for @52
+    __register_frame @53
+    __register_frame_info @54
+    __register_frame_info_bases @55
+    __register_frame_info_table @56
+    __register_frame_info_table_bases @57
+    __register_frame_table @58
+    config @59 DATA
+    consoleOutput @60 DATA
+    fileOutput @61 DATA
+    isLoggingEnabled @62 DATA
+    processId @63 DATA
+    processName @64 DATA
